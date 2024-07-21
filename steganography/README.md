@@ -10,6 +10,6 @@ Restore original
 
 python msb.py unmerge --image=img/msb_output.png --output=img/msb_output2.png
 
-## Hide information using F5
+## Hide information using F5 in images
 
 
