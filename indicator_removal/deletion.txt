@@ -1,7 +1,7 @@
-# Sicheres Löschen einer Datei durch Überschreibent
+# Sicheres Löschen einer Datei durch Überschreiben
 shred -u filename
 
-# Securely Löschen
+# Sicheres Löschen
 srm filename
 
 # Bash-Befehlsverlauf lösche
