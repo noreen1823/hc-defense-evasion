@@ -1,0 +1,1 @@
+Commands to remove artifacts during attack to circumvent security measures like IDS
