@@ -1,0 +1,13 @@
+sudo aide --config=/etc/aide/aide.conf --init
+sudo mv /var/lib/aide/aide.db.new /var/lib/aide/aide.db
+sudo aide --config=/etc/aide/aide.conf --check
+
+# echo "This is a test executable." > /tmp/.hidden/testfile.txt |mv /tmp/.hidden/testfile.txt /tmp/.hidden/testfile.exe
+# hier reicht nicht aus, nur die Zeitattribute zu änderen, da AIDE auch weitere Metainformationen verwendet
+
+sudo mkdir /mnt/hidden
+echo "This is a test executable." > /mnt/hidden/testfile.txt
+touch -r /etc/passwd /mnt/
+touch -r /etc/passwd /mnt/hidden/testfile.exe
+sudo mount -t tmpfs tmpfs /mnt/hidden
+sudo aide --config=/etc/aide/aide.conf --check

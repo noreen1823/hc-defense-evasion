@@ -1,0 +1,35 @@
+# Sicheres Löschen einer Datei durch Überschreibent
+shred -u filename
+
+# Securely Löschen
+srm filename
+
+# Bash-Befehlsverlauf lösche
+history -c
+rm ~/.bash_history
+
+# Log Dateien löschen (sehr verdächtig)
+# rm /var/log/syslog
+# rm /var/log/auth.log
+# Eher Log Dateien modifzieren
+vim /var/log/syslog
+vim /var/log/auth.log
+
+# Überschreiben freien Speicherplatz, um Reste der gelöschten Dateien zu löschen
+dd if=/dev/urandom of=/tmp/largefile bs=1M
+rm /tmp/largefile
+
+# Zugriffszeiten auf Verzeichnisse löschen
+touch -t /etc/passwd /path/to/directory
+
+# Find-Befehl verwenden, um Dateien nach Muster zu löschen
+find /path/to/dir -type f -name "pattern" -exec rm {} +
+
+# Erzwinge Löschen der Datei ohne Abfrage
+rm -f /path/to/filename
+
+# Swap deaktivieren, um sensible Daten im Swap Space zu löschen
+swapoff -a
+
+# Optional: Swap Space neu initialisieren
+mkswap /dev/sdX
