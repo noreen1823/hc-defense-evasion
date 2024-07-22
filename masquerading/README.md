@@ -43,3 +43,7 @@ You should be able to find the process you started by looking for the command `s
 
 Once the main process exits (`sleep 20`), you should run the command `ps -ef --forest` again and find the child process that has been spawned (`sleep 120`).
 It should now have been assigned to `init` with Parent PID = 1.
+
+## Further Read
+
+Take a look at https://github.com/kunte0/phar-jpg-polyglot for an example demo of an php and jpg polyglot file generator.
