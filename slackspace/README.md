@@ -19,7 +19,7 @@ Much thanks to the authors for providing us with the necessary tools
 First of course we need to clone this repository if not already done
 ```bash
 #Clone this repository
-git clonr https://github.com/noreen1823/hc-defense-evasion.git
+git clone https://github.com/noreen1823/hc-defense-evasion.git
 ```
 
 For this setup we'll create a new, clear filesystem to not mess with your current drive and then fill it with testfiles
