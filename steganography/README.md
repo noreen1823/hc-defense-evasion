@@ -1,5 +1,9 @@
 # Steganography
 
+## Credits
+
+Much thanks to the [original author](https://github.com/kelvins/steganography/tree/main) of the code for providing us with the necessary tools
+
 ## Hiding image inside another image using LSB
 
 Hide image 2 inside image 1
