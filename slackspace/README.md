@@ -57,7 +57,7 @@ echo "Hello, world" > test.txt
 # Clear slack space, write 0 into it
 sudo python3 hider.py --purge 
 
-# Write test.txt to slac space slot 1 (max 255 slots)
+# Write test.txt to slack space slot 1 (max 255 slots). In our example you can store up to 255 different files. You need to specify the id manually.
 sudo python3 hider.py --target /media/usb_mount_point --input test.txt --id 1 
 
 # Read slack space content with id 1 into test2.txt. The slackspace content gets automatically cleared after you read it.
